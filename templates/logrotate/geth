@@ -1,4 +1,4 @@
-{{ besu_log_dir }}/*.log {
+{{ geth_log_dir }}/*.log {
     rotate 14
     notifempty
     missingok

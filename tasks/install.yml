@@ -38,8 +38,8 @@
 
 - name: Setup logrotate
   template:
-    src: "logrotate/besu"
-    dest: "/etc/logrotate.d/besu"
+    src: "logrotate/geth"
+    dest: "/etc/logrotate.d/geth"
   become: true
 
 - name: Extract Geth source to install directory

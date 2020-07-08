@@ -1,5 +1,5 @@
 ---
-- name: Create Besu systemd service
+- name: Create Geth systemd service
   template:
     src: "{{ geth_systemd_template }}"
     dest: "{{ geth_systemd_dir }}/geth.service"
@@ -21,7 +21,7 @@
   become: true
   when: systemd_file is changed
 
-- name: Enable and start Besu service
+- name: Enable and start Geth service
   systemd:
     name: geth
     state: "{{ geth_systemd_state }}"

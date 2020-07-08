@@ -1,2 +1,2 @@
 ---
-besu_install_dir: /usr/local/bin
+geth_install_dir: /usr/local/bin

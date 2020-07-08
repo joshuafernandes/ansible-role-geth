@@ -61,13 +61,13 @@ RestrictConnectionBetweenLightClients = true
 [Node]
 DataDir = "{{geth_data_dir}}"
 IPCPath = "geth.ipc"
-HTTPPort = {{besu_p2p_port}}
+HTTPPort = {{geth_p2p_port}}
 HTTPVirtualHosts = ["{{geth_host_ip}}"]
 HTTPModules = [{{geth_rpc_ws_api|map('to_json')|join(',')}}]
 WSPort = {{geth_rpc_ws_port}}
 WSModules = ["net", "web3", "eth"]
 GraphQLPort = {{geth_graphql_http_port}}
-GraphQLVirtualHosts = ["{{besu_graphql_http_host}}"]
+GraphQLVirtualHosts = ["{{geth_graphql_http_host}}"]
 NodeKey = "{{geth_node_private_key_file}}"
 
 [Node.P2P]

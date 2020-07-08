@@ -1,7 +1,7 @@
 # Ansible Role: Geth
 
 ### Description
-Ansible role that will install, configure and runs [Besu](https://www.hyperledger.org/projects/besu): an enterprise Java Ethereum Client
+Ansible role that will install, configure and runs Geth
 
 ### Table of Contents
   - [Supported Platforms](#supported-platforms)
